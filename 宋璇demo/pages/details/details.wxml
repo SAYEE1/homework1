@@ -1,0 +1,17 @@
+<!--pages/details/details.wxml-->
+<view>
+ <view class="title">
+   <text>近期完结的好文</text>
+  </view>
+
+  <view>
+    <view wx:for="{{list}}" wx:key="id" >
+     <view class="lesson" id="{{item.id}}">
+      <image class="lessonPic" src="{{item.src}}"></image>
+      <view class="lessonName">{{item.name}}</view>
+      <view class="lessonIntroduce">{{item.introduce}}</view>
+     </view>
+    </view>
+  </view>
+</view>
+
